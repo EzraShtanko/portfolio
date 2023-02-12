@@ -1,0 +1,25 @@
+:root {
+    --header-height: 40pt;
+}
+
+body {
+    padding: 0pt;
+}
+
+header {
+    margin: 0pt;
+    padding: 0pt;
+
+    overflow: hidden;
+
+    height: var(--header-height);
+    width: 100%;
+
+    background-color: black;
+}
+
+header p {
+    display: block;
+
+    color: white;
+}
