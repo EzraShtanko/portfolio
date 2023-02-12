@@ -1,5 +1,8 @@
 :root {
-    --header-height: 40pt;
+    --header_h1_spacing: 20pt;
+    --header_h2_spacing: 5pt;
+    --header_ribbon_width: 10pt;
+    --indent_1: 70pt;
 }
 
 body {
@@ -10,16 +13,46 @@ header {
     margin: 0pt;
     padding: 0pt;
 
-    overflow: hidden;
-
-    height: var(--header-height);
-    width: 100%;
+    /*overflow: hidden;*/
+    /*height: var(--header-height);*/
 
     background-color: black;
 }
 
-header p {
-    display: block;
-
+header .ribbon {
     color: white;
+    overflow-x: hidden;
+    margin: 0pt var(--header_ribbon_width);
+    padding: 2pt 0pt;
+    font-size: calc(var(--header_ribbon_width) - 2pt);
+}
+
+header h1 {
+    padding: var(--header_h1_spacing) var(--indent_1);
+    padding-bottom: var(--header_h2_spacing);
+    font-size: 40pt;
+    color: white;
+}
+
+header h2 {
+    padding: var(--header_h2_spacing) var(--indent_1);
+    padding-bottom: var(--header_h1_spacing);
+    color: lightgrey;
+}
+
+header h2 .dot {
+    display: inline-block;
+    margin: 0pt 5pt 0pt 8pt;
+    height : 5pt;
+    width: 5pt;
+    border-radius: 5pt;
+    background-color: lightgrey;
+}
+
+.header_line {
+    height: 2pt;
+    border-radius: 2pt;
+    margin: 0pt var(--indent_1);
+    margin-right: 50%;
+    background-color: white;
 }
