@@ -5,6 +5,7 @@
     --indent_1: 70pt;
 
     --header_line_w : 2pt;
+    --header_h1_font_s : 40pt;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 header {
     margin: 0pt;
     padding: 0pt;
-
     background-color: black;
 }
 
@@ -28,7 +28,6 @@ header div.ribbon {
 }
 
 header div.v_ribbon_container {
-
     padding: 0pt;
     top:0pt;
 
