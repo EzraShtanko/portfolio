@@ -3,6 +3,8 @@
     --header_h2_spacing: 5pt;
     --header_ribbon_width: 10pt;
     --indent_1: 70pt;
+
+    --header_line_w : 2pt;
 }
 
 body {
@@ -13,18 +15,47 @@ header {
     margin: 0pt;
     padding: 0pt;
 
-    /*overflow: hidden;*/
-    /*height: var(--header-height);*/
-
     background-color: black;
 }
 
-header .ribbon {
+
+header div.ribbon {
     color: white;
     overflow-x: hidden;
     margin: 0pt var(--header_ribbon_width);
     padding: 2pt 0pt;
     font-size: calc(var(--header_ribbon_width) - 2pt);
+}
+
+header div.v_ribbon_container {
+
+    padding: 0pt;
+    top:0pt;
+
+    height: calc(var(--header_ribbon_width) * 2 + var(--header_h1_spacing) * 2 + var(--header_h2_spacing) * 2 + 2pt + 40pt + 14pt);
+
+    width: var(--header_ribbon_width);
+    position: absolute;
+    overflow: hidden;
+}
+
+header div.v_ribbon_container.left {
+    
+}
+header div.v_ribbon_container.right {
+    
+}
+
+header div.ribbon.vertical {
+    color:red;
+}
+
+header div.ribbon.vertical.left {
+    rotate: -90deg;
+}
+header div.ribbon.vertical.right {
+    rotate: 90deg;
+    
 }
 
 header h1 {
@@ -37,6 +68,7 @@ header h1 {
 header h2 {
     padding: var(--header_h2_spacing) var(--indent_1);
     padding-bottom: var(--header_h1_spacing);
+    font-size: 14pt;
     color: lightgrey;
 }
 
@@ -50,8 +82,8 @@ header h2 .dot {
 }
 
 .header_line {
-    height: 2pt;
-    border-radius: 2pt;
+    height: var(--header_line_w);
+    border-radius: var(--header_line_w);
     margin: 0pt var(--indent_1);
     margin-right: 50%;
     background-color: white;
