@@ -3,7 +3,7 @@
 }
 
 main {
-    padding: var(--cover_rows_padding) 0pt;
+    
 }
 
 .project_row {
@@ -23,15 +23,14 @@ main {
 .project_cover {
     display: inline-block;
 
+    height: inherit;
+
     min-width: 100pt;
     min-height: 100pt;
 
     border-radius: 10pt;
 
     background-color: black;
-}
-
-#test1.project_cover {
-    background-color: red;;
-    width : 200pt;
+    background-position: center;
+    background-size: cover;
 }

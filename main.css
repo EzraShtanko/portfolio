@@ -16,8 +16,15 @@ header {
     margin: 0pt;
     padding: 0pt;
     background-color: black;
+    background-image: url(./img/resources/test_header_ribbon.jpg);
+    background-position: center;
+    background-repeat: none;
 }
 
+main {
+    margin: 0 auto;
+    padding: 0;
+}
 
 header div.ribbon {
     color: white;
