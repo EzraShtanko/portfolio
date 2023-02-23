@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
     --cover_rows_padding: 5pt;
@@ -72,7 +72,18 @@ main a{
     font-size: var(--cover_title_font_size);
 }
 .project_title h2 {
+    
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 10pt;
+}
+
+.project_title h2 div.dot {
+    display: inline-block;
+    margin: 0pt 5pt;
+    height : 3pt;
+    width: 3pt;
+    border-radius: 5pt;
+    background-color: white;
 }
 
 .project_title:hover {
