@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
 :root {
     --cover_rows_padding: 5pt;
+    --cover_title_font_size: 25pt;
 }
 
 main {
-    
+    padding: 20pt 0pt;
+}
+
+main a{
+    text-decoration: none;
 }
 
 .project_row {
@@ -14,14 +21,15 @@ main {
 
     max-width: 800pt;
     margin: 0 auto;
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 
-    padding: var(--cover_rows_padding) 0pt;
+    padding: var(--cover_rows_padding) 0pt 0pt 0pt;
 
 }
 
 .project_cover {
     display: inline-block;
+    vertical-align: top;
 
     height: inherit;
 
@@ -33,4 +41,41 @@ main {
     background-color: black;
     background-position: center;
     background-size: cover;
+
+    box-shadow: inset 5em 5em 5em rgba(0, 0, 0, 0);
+    transition: box-shadow 0.7s;
+
+    overflow: hidden;
+}
+
+.project_cover:hover {
+    box-shadow: inset 5em 5em 5em rgba(0, 0, 0, 0.75);
+}
+
+.project_title {
+    display: block;
+    height : 100%;
+    width: auto;
+
+    padding-left: 20pt;
+    padding-top: calc(20pt - var(--cover_title_font_size));
+    
+    text-align: left;
+    color: rgba(255, 255, 255, 0);
+    
+    transition: padding-top 0.7s, 
+                color 0.7s;
+}
+
+.project_title h1 {
+    font-family: 'Gloock', serif;
+    font-size: var(--cover_title_font_size);
+}
+.project_title h2 {
+    font-size: 10pt;
+}
+
+.project_title:hover {
+    padding-top: calc(20pt);
+    color: rgba(255, 255, 255, 1);
 }
