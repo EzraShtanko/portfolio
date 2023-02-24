@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inknut+Antiqua&family=Roboto+Condensed:wght@300&display=swap');
+
 :root {
     --header_h1_spacing: 20pt;
     --header_h2_spacing: 5pt;
@@ -68,6 +70,7 @@ header div.ribbon.vertical.right {
 header h1 {
     padding: var(--header_h1_spacing) var(--indent_1);
     padding-bottom: var(--header_h2_spacing);
+    font-family: 'Inknut Antiqua', serif;
     font-size: 40pt;
     color: white;
 }
