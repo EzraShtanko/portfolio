@@ -3,6 +3,7 @@
 :root {
     --cover_rows_padding: 5pt;
     --cover_title_font_size: 25pt;
+    --cover_sticker_size: 30pt;
 }
 
 main {
@@ -23,12 +24,13 @@ main a{
     margin: 0 auto;
     /*background-color: lightgrey;*/
 
-    padding: var(--cover_rows_padding) 0pt 0pt 0pt;
+    padding: var(--cover_rows_padding) 0pt;
 
 }
 
 .project_cover {
     display: inline-block;
+    margin: 0 calc(var(--cover_rows_padding)/2 - 0.5pt);
     vertical-align: top;
 
     height: inherit;
@@ -37,39 +39,66 @@ main a{
     min-height: 100pt;
 
     border-radius: 10pt;
+    border-style: solid;
+    border-width: 1.5pt;
+    border-color: #D1B273;
 
     background-color: black;
     background-position: center;
     background-size: cover;
 
     box-shadow: inset 5em 5em 5em rgba(0, 0, 0, 0);
-    transition: box-shadow 0.7s;
+    transition: box-shadow 0.7s,
+                border-color 0.7s;
 
     overflow: hidden;
 }
 
+.red_border {
+    border-color: red;
+}
+
 .project_cover:hover {
     box-shadow: inset 5em 5em 5em rgba(0, 0, 0, 0.75);
+    border-color: rgba(255, 255, 255, 1);
 }
 
 .project_title {
-    display: block;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
     height : 100%;
     width: auto;
 
     padding-left: 20pt;
-    padding-top: calc(20pt - var(--cover_title_font_size));
+    padding: calc(20pt - var(--cover_title_font_size));
     
     text-align: left;
-    color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
     
-    transition: padding-top 0.7s, 
-                color 0.7s;
+    transition: padding 0.7s, 
+                opacity 0.7s;
+}
+
+.project_title div.separator {
+    height: 1pt;
+    opacity: inherit;
+    border-radius: 2pt;
+    background-color: white;
+    margin-top: 1pt;
+
+}
+
+.project_title:hover {
+    padding: 20pt;
+    opacity: 1;
 }
 
 .project_title h1 {
+    display: inline-block;
     font-family: 'Gloock', serif;
     font-size: var(--cover_title_font_size);
+    margin-bottom: 2pt;
 }
 .project_title h2 {
     
@@ -86,7 +115,11 @@ main a{
     background-color: white;
 }
 
-.project_title:hover {
-    padding-top: calc(20pt);
-    color: rgba(255, 255, 255, 1);
+.project_title div.sticker {
+    margin-top : 3pt;
+    margin-left: calc(100% - var(--cover_sticker_size));
+    height : var(--cover_sticker_size);
+    width: var(--cover_sticker_size);
+    border-radius: 2pt;
+    background-color: white;
 }
