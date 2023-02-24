@@ -1,5 +1,5 @@
-var parallax_endpos_y = -30
-var current_scroll = 0.0
+var parallax_endpos_y = -400
+var cur_scroll_normalized = 0.0
 
 
 var mbckg = document.getElementById("main_parallax_background");
@@ -16,6 +16,9 @@ console.log(mbckg);
 console.log(dots);
 
 document.addEventListener("scroll", (event) => {
-// parallax functionality
-// TODO
+    // parallax functionality
+    // use window.scrollY to get currect scroll value
+
+    cur_scroll_normalized = window.scrollY / document.body.scrollHeight;
+    mbckg.style.backgroundPositionY = init_mbckg_pos_y + cur_scroll_normalized * parallax_span;
 });
