@@ -25,19 +25,14 @@ main a{
 
     max-width: 800pt;
     margin: 0 auto;
-    /*background-color: lightgrey;*/
 
     padding: var(--cover_rows_padding) 0 0 0;
 
 }
 
-.project_row.height300 {
-    height: 300pt;
-}
-
-.project_row.height400 {
-    height: 400pt;
-}
+.project_row.height150 {height: 150pt;}
+.project_row.height300 {height: 300pt;}
+.project_row.height400 {height: 400pt;}
 
 .project_cover {
     display: inline-block;
@@ -58,6 +53,7 @@ main a{
     background-color: black;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
     box-shadow: inset 5em 5em 5em rgba(0, 0, 0, 0);
     transition: box-shadow 0.7s,
@@ -124,6 +120,16 @@ main a{
     
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 10pt;
+    line-height: 1.2em;
+}
+
+.project_title h2 div.dot {
+    display: inline-block;
+    margin: 0 5pt 2pt 5pt;
+    height : 3pt;
+    width: 3pt;
+    border-radius: 5pt;
+    background-color: white;
 }
 
 .project_title p {
@@ -134,16 +140,10 @@ main a{
     color: lightgrey;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2pt;
+
+    border-radius: 0pt 0pt 4pt 4pt;
 }
 
-.project_title h2 div.dot {
-    display: inline-block;
-    margin: 0pt 5pt;
-    height : 3pt;
-    width: 3pt;
-    border-radius: 5pt;
-    background-color: white;
-}
 
 .project_title div.sticker {
     margin-top : 3pt;
@@ -167,7 +167,7 @@ main a{
         width: auto;
     }
 }
-@media only screen and (max-width: 30em){
+@media only screen and (max-width: 35em){
     main {
         min-width: none;
         background-color: green;
@@ -182,12 +182,17 @@ main a{
         width: auto;
         height: 80vw;
         min-height: 140pt;
+
+        box-shadow: inset 5em 5em 5em rgba(0, 0, 0, 0.75);
     }
 
-    .project_row.height300 {
-        height: auto;
+    .project_title{
+        height: calc(100% - 2 * 20pt);
+        padding: 20pt;
+        opacity: 1;
     }
-    .project_row.height400 {
-        height: auto;
-    }
+
+    .project_row.height150 {height: auto;}
+    .project_row.height300 {height: auto;}
+    .project_row.height400 {height: auto;}
 }

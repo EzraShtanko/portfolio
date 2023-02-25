@@ -12,7 +12,8 @@
 
 body {
     padding: 0pt;
-    background-image : url(/img/resources/test_header_ribbon.jpg)
+    background-image : url(/img/resources/test_header_ribbon.jpg);
+    background-position-x: center;
 }
 
 header {

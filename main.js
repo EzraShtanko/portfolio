@@ -1,4 +1,4 @@
-var parallax_endpos_y = -500 // defines the extent of parallax effect
+var parallax_endpos_y = -700 // defines the extent of parallax effect
 var cur_scroll_normalized = 0.0 //
 
 
