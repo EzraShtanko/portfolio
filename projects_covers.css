@@ -25,6 +25,7 @@ main a{
 
     max-width: 800pt;
     margin: 0 auto;
+    margin-top: 5pt;
 
     padding: var(--cover_rows_padding) 0 0 0;
 
@@ -36,7 +37,7 @@ main a{
 
 .project_cover {
     display: inline-block;
-    margin: 7pt calc(var(--cover_rows_padding)/2 - 0.5pt);
+    margin: 7pt calc(var(--cover_rows_padding)/2 + 1pt);
     margin-bottom: 0;
     vertical-align: top;
 
