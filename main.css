@@ -8,6 +8,9 @@
 
     --header_line_w : 2pt;
     --header_h1_font_s : 40pt;
+
+    --main-min-width : 50pt;
+    --main-width: 80%
 }
 
 body {
@@ -26,8 +29,14 @@ header {
 }
 
 main {
+    min-width: 50em;
+    width:80%;
+    padding: 20pt 0pt;
     margin: 0 auto;
-    padding: 0;
+}
+
+main a{
+    text-decoration: none;
 }
 
 header div.ribbon {

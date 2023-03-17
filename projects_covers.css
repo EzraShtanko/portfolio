@@ -6,16 +6,6 @@
     --cover_sticker_size: 30pt;
 }
 
-main {
-    min-width: 50em;
-    width:80%;
-    padding: 20pt 0pt;
-}
-
-main a{
-    text-decoration: none;
-}
-
 .project_row {
     display: grid;
     text-align: center;
