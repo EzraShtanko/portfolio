@@ -1,0 +1,41 @@
+@media only screen and (max-width: 50em){
+    main {
+        width : calc(100% - 40pt);
+        padding: 20pt 20pt;
+        min-width: 0pt;
+        background-color: red;
+    }
+
+    .project_row {
+        width: auto;
+    }
+}
+@media only screen and (max-width: 35em){
+    main {
+        min-width: none;
+        background-color: green;
+    }
+
+    .project_row {
+        display: block;
+    }
+    
+    .project_cover{
+        display: block;
+        width: auto;
+        height: 80vw;
+        min-height: 140pt;
+
+        box-shadow: inset 5em 5em 5em rgba(0, 0, 0, 0.75);
+    }
+
+    .project_title{
+        height: calc(100% - 2 * 20pt);
+        padding: 20pt;
+        opacity: 1;
+    }
+
+    .project_row.height150 {height: auto;}
+    .project_row.height300 {height: auto;}
+    .project_row.height400 {height: auto;}
+}
