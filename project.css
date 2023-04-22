@@ -1,8 +1,14 @@
+header {
+    min-height: 20em;
+}
+
 main {
     padding: 0;
 }
 
 .row {
+    display: block;
+    padding: 1em 0;
     min-height: 15em;
     background-color: red;
 }
