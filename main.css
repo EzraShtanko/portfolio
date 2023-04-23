@@ -21,7 +21,7 @@ body {
 
 header {
     margin: 0pt;
-    padding: 0pt;
+    padding: 25pt 0pt;
     background-color: black;
     background-image: url(./img/resources/test_header_ribbon.jpg);
     background-position: center;
