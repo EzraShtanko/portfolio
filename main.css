@@ -35,6 +35,11 @@ main {
     margin: 0 auto;
 }
 
+main p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
 main a{
     text-decoration: none;
 }

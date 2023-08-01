@@ -1,3 +1,13 @@
+header {
+    background-image: url('../../img/resources/projects/LIONESS.png');
+}
+
+header h2 {
+    padding-left: 1em;
+    font-size: 35pt;
+    color: white;
+}
+
 body{
     background-image: none;
     background-color: grey;
