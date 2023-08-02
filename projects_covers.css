@@ -21,10 +21,6 @@
 
 }
 
-.project_row.height150 {height: 150pt;}
-.project_row.height300 {height: 300pt;}
-.project_row.height400 {height: 400pt;}
-
 .project_cover {
     display: inline-block;
     margin: 7pt calc(var(--cover_rows_padding)/2 + 1pt);
