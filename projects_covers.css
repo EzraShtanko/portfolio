@@ -21,6 +21,9 @@
 
 }
 
+.grid_8_7 { grid-template-columns: 8fr 7fr; }
+.grid_2_4 { grid-template-columns: 2.5fr 4fr;}
+
 .project_cover {
     display: inline-block;
     margin: 7pt calc(var(--cover_rows_padding)/2 + 1pt);
@@ -48,6 +51,12 @@
 
     overflow: hidden;
 }
+
+
+.height_150 { height: 150pt; }
+.height_300 { height: 300pt; }
+.height_450 { height: 450pt; }
+
 
 .red_border {
     border-color: red;

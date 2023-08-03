@@ -4,14 +4,22 @@ header {
 
 main {
     padding: 0.5em 0 0 0;
+    max-width: 800pt;
 }
 
+h3, h4 {
 
-h3 {
+    font-family: 'Roboto', sans-serif;
+
     color: white;
     text-align: center;
-    font-size: 21pt;
+    font-size: 2.5em;
     margin: 2em 0 2em 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
 }
 
 img {
@@ -24,12 +32,14 @@ img {
 .row {
     display: block;
     padding: 0.3em 0;
-    /*background-color: red;*/
 }
 
 .row p {
     padding: 0 0.5em;
     text-align: justify;
+}
+
+.row li {
 }
 
 .split {

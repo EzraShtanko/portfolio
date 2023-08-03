@@ -37,5 +37,7 @@
 
     .project_row.height150 {height: auto;}
     .project_row.height300 {height: auto;}
-    .project_row.height400 {height: auto;}
+    .project_row.height450 {height: auto;}
+
+    #fold_row {height: auto;}
 }

@@ -40,6 +40,17 @@ main p {
     color: white;
 }
 
+main li, ul {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20pt;
+    line-height: 2em;
+    color: white;
+}
+
+main ul {
+    margin: 0pt 15pt 1em 50pt;
+}
+
 main a{
     text-decoration: none;
 }
@@ -63,12 +74,8 @@ header div.v_ribbon_container {
     overflow: hidden;
 }
 
-header div.v_ribbon_container.left {
-    
-}
-header div.v_ribbon_container.right {
-    
-}
+header div.v_ribbon_container.left {}
+header div.v_ribbon_container.right {}
 
 header div.ribbon.vertical {
     color:red;
