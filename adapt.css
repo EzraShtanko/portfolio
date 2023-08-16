@@ -39,5 +39,10 @@
     .project_row.height300 {height: auto;}
     .project_row.height450 {height: auto;}
 
+
+    .row {
+        display: block;
+    }
+
     #fold_row {height: auto;}
 }
