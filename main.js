@@ -19,3 +19,4 @@ document.addEventListener("scroll", (event) => {
     cur_scroll_normalized = window.scrollY / document.body.scrollHeight;
     mbckg.style.backgroundPositionY = init_mbckg_pos_y + cur_scroll_normalized * parallax_span + "pt";
 });
+

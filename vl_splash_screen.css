@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --top_ribbon_text_width:    35em;
+    --top_ribbon_text_size:     1.5em;
+}
 
 
 
@@ -7,6 +14,8 @@ body {
 }
 
 .vl_splash_screen {
+    display: grid;
+    grid-template-rows: 7fr 3fr 1fr;
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -19,15 +28,105 @@ body {
     box-sizing: border-box;
 
     padding-top: 1em;
+
+    overflow: hidden;
 }
 
+.vl_splash_screen span {
+    width: 100%;
+    overflow: hidden;
+}
 
-.top_running_ribbon {
+.running_ribbon {
     width: 100%;
     height: 2em;
     background-color: black;
-
     margin-top: 1em;
+    text-align: center;
+    overflow: hidden;
+}
 
 
+@keyframes text_ribbon_run_00 {
+    from {
+        margin-left: calc((-6) * var(--top_ribbon_text_width));
+    }
+    to {
+        margin-left: 0.0;
+    }
+}
+
+.ribbon_text_wrapper {
+    
+    padding-top: 0.28em;
+    
+
+    width: calc(var(--top_ribbon_text_width) * 7 * 2);
+
+    /* animation-name: text_ribbon_run_00;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+
+.line_scroll {
+    animation-name: text_ribbon_run_00;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.line_scroll.backward {
+    animation-direction: reverse;
+}
+
+
+.ribbon_text {
+
+    font-family: "Dosis", sans-serif;
+    display: inline-block;
+    color: white;
+    width: var(--top_ribbon_text_width);
+    box-sizing: content-box;
+
+    text-align: center;
+    font-size: var(--top_ribbon_text_size);
+
+}
+
+.my_web_links {
+    /* position: absolute; */
+    color: white;
+    font-family: "Dosis", sans-serif;
+    font-size: var(--top_ribbon_text_size);
+
+    width: 100%;
+    /* margin-top: 65vh; */
+}
+
+.my_web_links ul {
+    margin-bottom: 0.5em;
+    background-color: black;
+    height: 1.1em;
+}
+
+.my_web_links ul a {
+    display: block;
+    margin: 0 auto;
+    width: 10em;
+    padding-top: 0.05em;
+    padding-right: 1em;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+}
+
+.my_web_links ul a:hover {
+    color: black;
+    height: 1.1em;
+    background-color: white;
+}
+
+.my_web_links ul a:active {
+    background-color: darkred;
 }
