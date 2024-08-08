@@ -143,3 +143,13 @@ body {
 .my_web_links ul a:active {
     background-color: darkred;
 }
+
+
+@media only screen and (max-width: 65em){
+
+    .vl_splash_screen {
+        background-position-x: 65%;
+        font-size: 1.35em;
+    }
+
+}
